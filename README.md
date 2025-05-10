@@ -24,7 +24,7 @@ W katalogu głównym znajdują się następujące pliki:
 
 W pliku `thesis.tex` należy uzupełnić dane dotyczące pracy, zgodnie z komentarzami w pliku, a następnie dodać kolejne rozdziały pracy. Dodatkowo dane `XMP` dla dokumentu `PDF` należy uzupełnić w pliku `thesis.xmpdata`.
 
-Pliku `thesis.cls` nie zaleca się edytować — można to jednak zrobić, jeśli konieczna jest edycja stylu dokumentu.
+Pliku `thesis.cls` nie zaleca się edytować – można to jednak zrobić, jeśli konieczna jest edycja stylu dokumentu.
 
 ## Kompilacja dokumentu
 
@@ -38,8 +38,7 @@ Warto zauważyć, że `pdfTeX` jest przestarzały i nie zapewnia wielu nowoczesn
 
 Zaleca się, z uwagi na ochronę własności intelektualnej i zapobieganie analizowaniu dokumentu przez obce podmioty, instalację środowiska LaTeX na własnym komputerze.
 
-Rekomendowane pakiety w zależności od systemu operacyjnego:
-
+Rekomendowane pakiety w zależności od systemu operacyjnego to:
 * `GNU/Linux` – pakiet `texlive`,
 * `macOS` – pakiet `MacTeX`,
 * `Windows` – port pakietu `TeX Live`.
@@ -69,6 +68,8 @@ Do działania skryptu wymagane są programy: `LibreOffice` oraz `Inkscape` w cel
 ## Licencja
 
 Niniejszy szablon dostępny jest na licencji `GNU LGPL v2.1`. Stosowanie, modyfikowanie i rozpowszechnianie niniejszego szablonu jest dozwolone w dowolnym celu, przy czym sam szablon traktowany jest jak zewnętrzna biblioteka.
+
+Niniejszy szablon wykorzystuje wyłącznie wolne oprogramowanie i takie tez oprogramowanie gorąco poleca się podczas codziennej pracy. Gorąco poleca się także stosowanie systemu składu LaTeX podczas tworzenia dokumentów, jako alternatywę dla klasycznych edytorów tekstu.
 
 Plik loga `polsl_logo.pdf`, który umieścić należy samodzielnie w folderze `obrazki`, jest własnością Politechniki Śląskiej, a jego stosowanie regulowane jest przepisami zawartymi w [Księdze Znaku](https://www.polsl.pl/siwps/logo-2/). Plik należy pobrać ze wskazanej strony i stosować tylko zgodnie z jego licencją.
 
