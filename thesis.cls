@@ -131,8 +131,8 @@
 		{\bf Nr albumu: \authalbum}
 		\vskip 20pt
 		\begin{tabular}[c]{r @{~:~} l}
-		{\large {\bf Kierunek}}    & {\large \edudir}   \\
-		{\large {\bf Specjalność}} & {\large \edupath}  \\
+		{\large {\bf Kierunek}}    & {\large \sf \edudir}   \\
+		{\large {\bf Specjalność}} & {\large \sf \edupath}  \\
 		\end{tabular}
 		\vskip 20pt
 		{\large \bf \MakeUppercase{Prowadzący pracę}} \\
@@ -171,20 +171,18 @@
 
 \def\preface
 {
-	\pagestyle{empty}
+	\pagestyle{plain}
+	\pagenumbering{roman}
 	\noindent\textbf{Tytuł pracy:}~\@title\par
 	\noindent\textbf{Streszczenie:}~\input{dodatki/streszczenie}\par
 	\noindent\textbf{Słowa kluczowe:}~\keywordspl\par
-	\vskip 10pt
+	\vskip 15pt
 	\noindent\textbf{Thesis title:}~\titleen\par
 	\noindent\textbf{Summary:}~\input{dodatki/abstract}\par
 	\noindent\textbf{Key words:}~\keywordsen\par
 	\clearpage
-	\pagestyle{plain}
-	\pagenumbering{roman}
-	\hugelinespacing
-	\tableofcontents
 	\normallinespacing
+	\tableofcontents
 }
 
 \def\appendix
