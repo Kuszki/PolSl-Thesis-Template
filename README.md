@@ -2,13 +2,15 @@
 
 Niniejszy szablon zawiera formaty nagłówków, stronę tytułową, jak i propozycje spisu treści, podpisów pod rysunkami, wzory tabel itp., przeznaczone jako wzór przy formatowaniu pracy dyplomowej.
 
+UWAGA - nie jest to oficjalny szablon pracy dyplomowej. Na stronie [Politechniki Śląskiej](https://www.polsl.pl/) nie są dostępne uniwersalne i jednolite szablony, tym bardziej w formacie LaTeX.
+
 ## Struktura katalogów
 
 Szablon złożony jest z następujących katalogów:
 * `rozdzialy` – tutaj zaleca się umieszczać kolejne pliki rozdziałów,
 * `obrazki` – tutaj zaleca się umieszczanie obrazków i rysunków,
 * `dodatki` – tutaj znajdują się streszczenia i bibliografia,
-* `dodatki` – tutaj pojawi się wygenerowany plik `PDF`.
+* `budowa` – tutaj pojawi się wygenerowany plik `PDF`.
 
 ## Pliki w katalogu głównym
 
@@ -38,9 +40,9 @@ Zaleca się, z uwagi na ochronę własności intelektualnej i zapobieganie anali
 
 Rekomendowane pakiety w zależności od systemu operacyjnego:
 
-* **GNU/Linux** – `texlive` (dostępny dla większości dystrybucji),
-* **macOS** – `MacTeX`,
-* **Windows** – `TeX Live`.
+* `GNU/Linux` – pakiet `texlive`,
+* `macOS` – pakiet `MacTeX`,
+* `Windows` – port pakietu `TeX Live`.
 
 ### Kompilacja za pomocą skryptu
 
@@ -62,7 +64,7 @@ inkscape -D obrazki/*.svg --export-type pdf
 latexmk --shell-escape -output-directory=budowa -pdflua -f thesis.tex
 ```
 
-Do działania skryptu wymagane są programy: `LibreOffice` oraz `Inkscape`.
+Do działania skryptu wymagane są programy: `LibreOffice` oraz `Inkscape` w celu konwersji obrazów do formatu `PDF`.
 
 ## Licencja
 
