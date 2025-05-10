@@ -1,0 +1,34 @@
+\documentclass[a4paper, 12pt, twoside, polish]{thesis}
+
+\title{Szablon pracy dyplomowej}         % Tytuł pracy w języku polskim
+\author{Łukasz Dróżdż}                   % Autor pracy (wraz z tytułem)
+\date{\today}                            % Data budowy bieżącej wersji
+
+\def\worktype{Projekt inżynierski}       % Rodzaj pracy
+\def\edudir{Elektrotechnika}             % Kierunek studiów
+\def\edupath{AME}                        % Specjalność
+\def\titleen{Thesis template}            % Tytuł w języku angielskim
+\def\authalbum{123456789}                % Numer albumu
+\def\fulldate{Gliwice, 2025}             % Data złożenia pracy
+
+\def\keywordspl{słowo1, słowo2}          % Słowa kluczowe polskie
+\def\keywordsen{word1, word2}            % Słowa kluczowe angielskie
+
+\def\fullpromoter{dr inż. Łukasz Dróżdż} % Dane osobowe promotora
+\def\institute{Nazwa jednostki}          % Nazwa jednostki
+\def\department{Wydział Elektryczny}     % Nazwa wydziału
+
+\bibliography{dodatki/bibliografia}      % Plik źródłowy bibliografii
+\graphicspath{ {./obrazki/} }            % Ścieżka katalogu z obrazkami
+
+\begin{document}
+\maketitle                               % Strona tytułowa
+\preface                                 % Informacje i spis treści
+\body                                    % Część główna pracy
+\input{rozdzialy/wstep}                  % Wstawienie rozdziału 1
+\input{rozdzialy/formatowanie}           % Wstawienie rozdziału 2
+\input{rozdzialy/octave}                 % Wstawienie rozdziału 3
+\input{rozdzialy/kompilacja}             % Wstawienie rozdziału 4
+\input{rozdzialy/wnioski}                % Wstawienie rozdziału 5
+\appendix                                % Spis literatury
+\end{document}
