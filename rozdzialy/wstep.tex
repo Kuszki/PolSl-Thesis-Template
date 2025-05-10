@@ -4,20 +4,20 @@ Niniejszy szablon zawiera formaty nagłówków, stronę tytułową jak i propozy
 
 Szablon złożony jest z następujących katalogów:
 \begin{itemize}
-\item \verb|rozdzialy| -- tutaj zaleca się umieszczać kolejne pliki rozdziałów,
-\item \verb|obrazki|   -- tutaj zaleca się umieszczanie obrazków i rysunków,
-\item \verb|dodatki|   -- tutaj znajdują się streszczenia i bibliografia,
-\item \verb|budowa|    -- tutaj pojawi się wygenerowany plik \verb|PDF|.
+\item \texttt{rozdzialy} -- tutaj zaleca się umieszczać kolejne pliki rozdziałów,
+\item \texttt{obrazki}   -- tutaj zaleca się umieszczanie obrazków i rysunków,
+\item \texttt{dodatki}   -- tutaj znajdują się streszczenia i bibliografia,
+\item \texttt{budowa}    -- tutaj pojawi się wygenerowany plik \texttt{PDF}.
 \end{itemize}
 
 W katalogu głównym natomiast znaleźć można pliki:
 \begin{itemize}
-\item \verb|build.sh|       -- skrypt stosowany do wygenerowania pliku \verb|PDF|,
-\item \verb|thesis.cls|     -- klasa szablonu dokumentu (nie należy edytować),
-\item \verb|thesis.tex|     -- główny plik dokumentu (należy uzupełnić),
-\item \verb|thesis.xmpdata| -- metryka dokumentu (należy uzupełnić).
+\item \texttt{build.sh}       -- skrypt stosowany do wygenerowania pliku \texttt{PDF},
+\item \texttt{thesis.cls}     -- klasa szablonu dokumentu (nie należy edytować),
+\item \texttt{thesis.tex}     -- główny plik dokumentu (należy uzupełnić),
+\item \texttt{thesis.xmpdata} -- metryka dokumentu (należy uzupełnić).
 \end{itemize}
 
-W pliku \verb|thesis.tex| należy uzupełnić dane dotyczące pracy, zgodnie z komentarzami w pliku, a następnie dodać kolejne rozdziały pracy. Dodatkowo dane \verb|XMP| dla dokumentu \verb|PDF| należy uzupełnić w pliku \verb|thesis.xmpdata|. Pliku \verb|thesis.cls| nie zaleca się edytować -- można to jednak robić, jeśli konieczna jest edycja stylu dokumentu.
+W pliku \texttt{thesis.tex} należy uzupełnić dane dotyczące pracy, zgodnie z komentarzami w pliku, a następnie dodać kolejne rozdziały pracy. Dodatkowo dane \texttt{XMP} dla dokumentu \texttt{PDF} należy uzupełnić w pliku \texttt{thesis.xmpdata}. Pliku \texttt{thesis.cls} nie zaleca się edytować -- można to jednak robić, jeśli konieczna jest edycja stylu dokumentu.
 
-Dokument \verb|PDF| generowany jest w formacie \verb|PDF/A-3u|. Marginesy dokumentu ustawione są tak, aby wewnętrzny margines był większy od zewnętrznego, co umożliwia zbindowanie pracy przy jednoczesnym zachowaniu jej czytelności. W celu uzyskania wersji z równymi marginesami (np. w celu zapisu jej na płytę) należy zamienić \verb|inner = 3.0cm, outer = 2.0cm| na \verb|inner = 2.5cm, outer = 2.5cm| w pliku \verb|thesis.cls|. Ogólny układ pracy nie ulegnie zmianie.
+Dokument \texttt{PDF} generowany jest w formacie \texttt{PDF/A-3u}. Marginesy dokumentu ustawione są tak, aby wewnętrzny margines był większy od zewnętrznego, co umożliwia zbindowanie pracy przy jednoczesnym zachowaniu jej czytelności. W celu uzyskania wersji z równymi marginesami (np. w celu zapisu jej na płytę) należy zamienić \verb|inner = 3.0cm, outer = 2.0cm| na \verb|inner = 2.5cm, outer = 2.5cm| w pliku \texttt{thesis.cls}. Ogólny układ pracy nie ulegnie zmianie.
