@@ -68,6 +68,6 @@ Do działania skryptu wymagane są programy: `LibreOffice` oraz `Inkscape`.
 
 Niniejszy szablon dostępny jest na licencji `GNU LGPL v2.1`. Stosowanie, modyfikowanie i rozpowszechnianie niniejszego szablonu jest dozwolone w dowolnym celu, przy czym sam szablon traktowany jest jak zewnętrzna biblioteka.
 
-Plik loga `polsl_logo.pdf` znajdujący się w folderze `obrazki` jest własnością Politechniki Śląskiej, a jego stosowanie regulowane jest przepisami zawartymi w [Księdze Znaku](https://www.polsl.pl/siwps/logo-2/).
+Plik loga `polsl_logo.pdf`, który zapisaż należy samodzielnie w folderze `obrazki`, jest własnością Politechniki Śląskiej, a jego stosowanie regulowane jest przepisami zawartymi w [Księdze Znaku](https://www.polsl.pl/siwps/logo-2/). Plik należy pobrać ze wskazanej strony i stosować tylko zgodnie z jego licencją.
 
 Uwagi dotyczące szablonu proszę zgłaszać na adres autora: [lukasz.drozdz@polsl.pl](mailto:lukasz.drozdz@polsl.pl).
