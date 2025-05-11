@@ -34,16 +34,12 @@ Warto zauważyć, że `pdfTeX` jest przestarzały i nie zapewnia wielu nowoczesn
 
 Stosowanie `XeTeX` jest możliwe, natomiast opcja ta nie zapewnia możliwości stosowania `\babelprovide[transforms = oneletter.nobreak]{polish}`, stąd generowany dokument będzie się cechował dużo gorszą jakością składu.
 
-Niniejszy szablon może być również stosowany bezpośrednio w serwisie `Overleaf`. Należy jednak koniecznie zmienić stosowany kompilator z `pdfTeX` na `LuaTeX`.
+Niniejszy szablon może być również stosowany bezpośrednio w serwisie `Overleaf`. Należy jednak koniecznie zmienić stosowany kompilator z `pdfTeX` na `LuaTeX`. Zaleca się jednak, z uwagi na ochronę własności intelektualnej i zapobieganie analizowaniu dokumentu przez obce podmioty, instalację środowiska LaTeX na własnym komputerze.
 
-### Lokalna kompilacja
-
-Zaleca się, z uwagi na ochronę własności intelektualnej i zapobieganie analizowaniu dokumentu przez obce podmioty, instalację środowiska LaTeX na własnym komputerze.
-
-Rekomendowane pakiety w zależności od systemu operacyjnego to:
-* `GNU/Linux` – pakiet `texlive`,
-* `macOS` – pakiet `MacTeX`,
-* `Windows` – port pakietu `TeX Live`.
+Pakiet [TeX Live](https://www.tug.org/texlive) pobrać można w zasadzie dla każdej platformy, przy czym kolejne pakiety w zależności od systemu operacyjnego to przykładowo:
+* `Debian GNU/Linux` – pakiet [`texlive`](https://wiki.debian.org/TeXLive),
+* `macOS` – pakiet [`MacTeX`](https://www.tug.org/mactex),
+* `Windows` – port pakietu [`TeX Live`](https://tug.org/texlive/windows.html).
 
 ### Kompilacja za pomocą skryptu
 
@@ -65,7 +61,7 @@ inkscape -D obrazki/*.svg --export-type pdf
 latexmk --shell-escape -output-directory=budowa -pdflua -f thesis.tex
 ```
 
-Do działania skryptu wymagane są programy: `LibreOffice` oraz `Inkscape` w celu konwersji obrazów do formatu `PDF`.
+Do działania skryptu wymagane są programy `LibreOffice` oraz `Inkscape` w celu konwersji obrazów do formatu `PDF`.
 
 ## Licencja
 
