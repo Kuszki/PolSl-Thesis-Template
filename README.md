@@ -28,11 +28,13 @@ Pliku `thesis.cls` nie zaleca się edytować – można to jednak zrobić, jeśl
 
 ## Kompilacja dokumentu
 
-Niniejszy szablon może być stosowany bezpośrednio w serwisie `Overleaf`. Należy jednak koniecznie zmienić stosowany kompilator z `pdfTeX` na `LuaTeX`.
+Aby zapewnić kompleksowe wsparcie `Unicode` oraz obsługę nowoczesnych rozwiązań i bibliotek, projekt wymaga kompilatora `LuaTeX`.
 
-Warto zauważyć, że `pdfTeX` jest przestarzały i nie zapewnia wielu nowoczesnych udogodnień, w tym:
-* opcji `\babelprovide[transforms = oneletter.nobreak]{polish}`,
-* generowania pliku w standardzie `PDF/A-3u`.
+Warto zauważyć, że `pdfTeX` jest przestarzały i nie zapewnia wielu nowoczesnych udogodnień, w tym opcji `\babelprovide[transforms = oneletter.nobreak]{polish}` oraz generowania pliku w standardzie `PDF/A-3u`.
+
+Stosowanie `XeTeX` jest możliwe, natomiast opcja ta nie zapewnia możliwości stosowania `\babelprovide[transforms = oneletter.nobreak]{polish}`, stąd generowany dokument będzie się cechował dużo gorszą jakością składu.
+
+Niniejszy szablon może być również stosowany bezpośrednio w serwisie `Overleaf`. Należy jednak koniecznie zmienić stosowany kompilator z `pdfTeX` na `LuaTeX`.
 
 ### Lokalna kompilacja
 
@@ -71,6 +73,6 @@ Niniejszy szablon dostępny jest na licencji `GNU LGPL v2.1`. Stosowanie, modyfi
 
 Niniejszy szablon wykorzystuje wyłącznie wolne oprogramowanie i takie tez oprogramowanie gorąco poleca się podczas codziennej pracy. Gorąco poleca się także stosowanie systemu składu LaTeX podczas tworzenia dokumentów, jako alternatywę dla klasycznych edytorów tekstu.
 
-Plik loga `polsl_logo.pdf`, który umieścić należy samodzielnie w folderze `obrazki`, jest własnością Politechniki Śląskiej, a jego stosowanie regulowane jest przepisami zawartymi w [Księdze Znaku](https://www.polsl.pl/siwps/logo-2/). Plik należy pobrać ze wskazanej strony i stosować tylko zgodnie z jego licencją.
+Plik loga `polsl_logo.pdf`, który znajduje się w folderze `obrazki`, jest własnością Politechniki Śląskiej, a jego stosowanie regulowane jest przepisami zawartymi w [Księdze Znaku](https://www.polsl.pl/siwps/logo-2/). Plik należy stosować tylko zgodnie z jego licencją i w warunkach, dla których jest to dozwolone.
 
 Uwagi dotyczące szablonu proszę zgłaszać na adres autora: [lukasz.drozdz@polsl.pl](mailto:lukasz.drozdz@polsl.pl).
