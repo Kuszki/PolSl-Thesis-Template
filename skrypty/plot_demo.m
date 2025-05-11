@@ -9,7 +9,7 @@ set(h, "paperposition", [0, 0, [16 7.5]])
 # Ustaw marginesy i rozmiar rysunku (wymaga wprawy)
 set(h, "defaultaxesposition", [0.095, 0.185, 0.870, 0.790])
 
-set(h, "defaultaxesfontsize", 11) # Ustaw odpowiedni rozmiar czcionki
+set(h, "defaulttextfontsize", 11) # Ustaw odpowiedni rozmiar czcionki
 set(h, "defaultaxesfontsize", 11) # uwaga na błąd w GNU Octave
 set(h, "defaulttextfontname", "Latin Modern Roman") # Ustal krój czcionki
 set(h, "defaultaxesfontname", "Latin Modern Roman") # jednolity z PDF
