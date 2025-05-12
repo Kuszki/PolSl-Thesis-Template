@@ -115,8 +115,8 @@
 \setitemize{noitemsep}
 
 \fancyhead{}
-\fancyhead[OR]{\nouppercase{\small\leftmark}}
-\fancyhead[EL]{\nouppercase{\small\@author~:~\@title}}
+\fancyhead[OR]{\nouppercase{\small\@title}}
+\fancyhead[EL]{\nouppercase{\small\leftmark}}
 
 \def\maketitle
 {
@@ -151,7 +151,7 @@
 	\newpage
 	\normallinespacing
 	\pagestyle{empty}
-	\pagenumbering{alph}
+	\pagenumbering{roman}
 	\centering
 	\normalsize
 	\vbox to \vsize
@@ -171,8 +171,7 @@
 
 \def\preface
 {
-	\pagestyle{plain}
-	\pagenumbering{roman}
+	\pagestyle{empty}
 	\noindent\textbf{Tytuł pracy:}~\@title\par
 	\noindent\textbf{Streszczenie:}~\input{dodatki/streszczenie}\par
 	\noindent\textbf{Słowa kluczowe:}~\keywordspl\par
@@ -182,6 +181,7 @@
 	\noindent\textbf{Key words:}~\keywordsen\par
 	\clearpage
 	\normallinespacing
+	\tocloftpagestyle{empty}
 	\tableofcontents
 }
 

@@ -4,7 +4,7 @@ Niniejszy szablon zawiera formaty nagłówków, stronę tytułową, jak i propoz
 
 Projekt wykorzystuje tylko i wyłącznie wolne oprogramowanie i zachęca użytkowników do stosowania go podczas codziennej pracy. Celem projektu jest również zachęcenie odbiorców do stosowania systemu składu `LaTeX` podczas tworzenia dokumentów, jako alternatywy dla klasycznych edytorów tekstu, które mimo pozornie łatwiejszej obsługi, nie oferują tak dużej prostoty, swobody i jakości sporządzania dokumentów. O ile próg wejścia w `LaTeX` jest dość wysoki, o tyle dotyczy to głównie tworzenia tego typu szablonu, a nie stosowania ich.
 
-**UWAGA** - nie jest to oficjalny szablon pracy dyplomowej. Na stronie [Politechniki Śląskiej](https://www.polsl.pl/) nie są dostępne uniwersalne i jednolite szablony, tym bardziej w formacie `LaTeX`.
+**UWAGA** - nie jest to oficjalny szablon pracy dyplomowej. Na stronie [Politechniki Śląskiej](https://www.polsl.pl/) nie są dostępne uniwersalne i jednolite szablony, tym bardziej w formacie `LaTeX`. Wytyczne odnośnie sporządzania prac dyplomowych ustala [Zarządzenie nr 54/2022](https://lex.polsl.pl/423-lista/d/20505/5/), przy czym są one opisane w formularzu `Z4-PU12`. Formularz ten daje jednak bardzo dużą swobodę w formatowaniu pracy, gdzie to promotor lub prowadzący pracę określa wytyczne do jej przygotowania. Zaproponowany szablon zachowuje najistotniejsze zalecenia wymienione w omawianym dokumencie.
 
 ## Struktura katalogów
 
