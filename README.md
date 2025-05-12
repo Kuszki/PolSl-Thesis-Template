@@ -50,7 +50,7 @@ Najłatwiejszą metodą budowy dokumentu, poza stosowaniem skryptu `build.sh`, j
 latexmk --shell-escape -output-directory=budowa -pdflua -f thesis.tex
 ```
 
-Niniejszy szablon może być również stosowany bezpośrednio w serwisie `Overleaf`. Należy jednak koniecznie zmienić stosowany kompilator z `pdfTeX` na `LuaTeX`. Zaleca się jednak, z uwagi na ochronę własności intelektualnej i zapobieganie analizowaniu dokumentu przez obce podmioty, instalację środowiska `LaTeX` na własnym komputerze.
+Niniejszy szablon może być również stosowany bezpośrednio w serwisie [`Overleaf`](https://www.overleaf.com/read/sgzmptyskmvn#9bd014). Należy jednak koniecznie zmienić stosowany kompilator z `pdfTeX` na `LuaTeX`. Zaleca się jednak, z uwagi na ochronę własności intelektualnej i zapobieganie analizowaniu dokumentu przez obce podmioty, instalację środowiska `LaTeX` na własnym komputerze.
 
 ## Licencja
 
