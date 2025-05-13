@@ -1,4 +1,8 @@
+obrazki/*.tex
 budowa/*
+
+*.pdf
+*.svg
 
 *.aux
 *.log
