@@ -15,10 +15,13 @@
 \RequirePackage[autostyle]{csquotes}
 \RequirePackage[section]{placeins}
 \RequirePackage[polish]{babel}
+
+\RequirePackage{gnuplot-lua-tikz}
 \RequirePackage{unicode-math}
 \RequirePackage{indentfirst}
 \RequirePackage{longtable}
 \RequirePackage{emptypage}
+\RequirePackage{gincltex}
 \RequirePackage{tabularx}
 \RequirePackage{interval}
 \RequirePackage{setspace}
@@ -31,6 +34,7 @@
 \RequirePackage{multicol}
 \RequirePackage{enumitem}
 \RequirePackage{textcomp}
+\RequirePackage{pgfplots}
 \RequirePackage{lmodern}
 \RequirePackage{tocloft}
 \RequirePackage{parskip}
@@ -59,6 +63,7 @@
 \babelprovide[transforms = oneletter.nobreak]{polish}
 \babelprovide[justification = unhyphenated]{polish}
 \hypersetup{hidelinks, breaklinks = true}
+\pgfplotsset{compat = newest}
 
 \titleformat{name = \chapter, numberless}[block]{\normalfont\bfseries\huge}{}{0pt}{}
 \titleformat{name = \chapter}[block]{\normalfont\bfseries\huge}{}{0pt}{\thechapter.~}
