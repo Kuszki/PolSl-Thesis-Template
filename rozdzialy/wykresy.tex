@@ -8,20 +8,20 @@ Wykresy powinny być wykonane starannie, z zachowaniem odpowiedniej czytelności
 \makecaption{fig:octave}{Przykładowy rysunek wygenerowany w programie \texttt{GNU Octave}}
 \end{figure}
 
-Przedstawiony skrypt tworzy w pierwszej linii nowy wykres, przy czym gdy skrypt zostaje wywołany z terminala wykres ten jest ukrywany (taki zabieg ułatwia wsadowe generowanie wykresów). Następnie ustalane są wymiary wykresu (linie 5--7) oraz korygowana jest jego pozycja tak, aby wypełniał on cały obszar rysunku (linia 10). W kolejnych liniach (12--16) ustalane są parametry czcionki, przy czym z nieznanych dla autora niniejszego szablonu powodów, dla rozmiaru \qty{11}{pt} wynikowy plik cechuje się czcionką o rozmiarze \qty{12}{pt} (najprawdopodobniej występuje bliżej nieokreślony błąd w programie \texttt{GNU Octave}).
-
-Po wygenerowaniu danych wykres jest sporządzany oraz formatowane są jego elementy. W opisach stosować można większość podstawowych funkcji \LaTeX{} do formatowania tekstu. Można również zastosować wartość \texttt{'latex'} dla opcji \texttt{'interpreter'} formatując kolejne elementy wykresu. Szczegóły opisuje \href{https://docs.octave.org/latest}{dokumentacja} programu \texttt{GNU Octave}. Znaki specjalne wstawiać można bezpośrednio w edytorze tekstu, stosując kodowanie \texttt{UTF-8}. Można także wstawiać je stosując ich nazwy, identycznie jak podczas edycji równań. Wygenerowany w omawiany sposób wykres jest spójny z resztą dokumentu i wygląda profesjonalnie.
-
 \begin{listing}[hbt!]
 \inputminted[linenos, breaklines]{octave}{skrypty/plot_demo.m}
 \makecaption{lst:octave}{Przykładowy skrypt programu \texttt{GNU Octave} generujący rysunek~\ref{fig:octave}}
 \end{listing}
 
-Wykresy można generować również w programie \texttt{gnuplot}, gdzie przykładowy skrypt przedstawiono w listingu~\ref{lst:gnuplot}. Stosować w tym celu można terminal \texttt{tikz}, który umożliwia wygenerowanie skryptu \LaTeX{} gotowego do osadzenia w dokumencie. Dla przykładu tytuł wykresu $f(x) = e^{-0.1x} \cdot \sin(x)$ z rysunku~\ref{fig:gnuplot} wygląda identycznie, jak w tekście.
+Przedstawiony skrypt tworzy w pierwszej linii nowy wykres, przy czym gdy skrypt zostaje wywołany z terminala wykres ten jest ukrywany (taki zabieg ułatwia wsadowe generowanie wykresów). Następnie ustalane są wymiary wykresu (linie 5--7) oraz korygowana jest jego pozycja tak, aby wypełniał on cały obszar rysunku (linia 10). W kolejnych liniach (12--16) ustalane są parametry czcionki, przy czym z nieznanych dla autora niniejszego szablonu powodów, dla rozmiaru \qty{11}{pt} wynikowy plik cechuje się czcionką o rozmiarze \qty{12}{pt} (najprawdopodobniej występuje błąd w programie \texttt{GNU Octave}, związany ze skalowaniem obrazu).
+
+Po wygenerowaniu danych wykres jest sporządzany oraz formatowane są jego elementy. W opisach stosować można większość podstawowych funkcji \LaTeX{} do formatowania tekstu. Można również zastosować wartość \texttt{'latex'} dla opcji \texttt{'interpreter'} formatując kolejne elementy wykresu. Szczegóły opisuje \href{https://docs.octave.org/latest}{dokumentacja} programu \texttt{GNU Octave}. Znaki specjalne wstawiać można bezpośrednio w edytorze tekstu, stosując kodowanie \texttt{UTF-8}. Można także wstawiać je stosując ich nazwy, identycznie jak podczas edycji równań. Wygenerowany w omawiany sposób wykres jest spójny z resztą dokumentu i wygląda profesjonalnie. Niestety, stosowanie \LaTeX{} w programie \texttt{GNU Octave} jest mocno ograniczone.
+
+Wykresy można generować również w programie \texttt{gnuplot}, gdzie przykładowy skrypt przedstawiono w listingu~\ref{lst:gnuplot}. Stosować w tym celu można terminal \texttt{tikz}, który umożliwia wygenerowanie skryptu \LaTeX{} gotowego do osadzenia w dokumencie. Zauważyć można, że tytuł wykresu \enquote{$f(x) = e^{-0.1x} \cdot \sin(x)$} z rysunku~\ref{fig:gnuplot} wygląda identycznie, jak w tekście.
 
 \begin{figure}[htb!]
 \centering
-\includegraphics{gnuplot_demo.tex}
+\includegraphics{gnuplot_demo}
 \makecaption{fig:gnuplot}{Przykładowy rysunek wygenerowany w programie \texttt{gnuplot}}
 \end{figure}
 
@@ -30,7 +30,7 @@ Wykresy można generować również w programie \texttt{gnuplot}, gdzie przykła
 \makecaption{lst:gnuplot}{Przykładowy skrypt programu \texttt{gnuplot} generujący rysunek~\ref{fig:gnuplot}}
 \end{listing}
 
-Ostatnim proponowanym rozwiązaniem może być również ręczne generowanie wykresów bezpośrednio w treści dokumentu, stosując bibliotekę \texttt{pgfplots} oraz środowisko \texttt{tikzpicture}. Takie rozwiązanie zapewnia jakość porównywalną do stosowania programu \texttt{gnuplot} i terminala \texttt{tikz}, przy czym wymaga wprowadzenia treści wykresu ręcznie. Przykład wykresu, który generowany jest na podstawie listingu~\ref{lst:pgfplots} przedstawia rysunek~\ref{fig:pgfplots}. Należy zaznaczyć, że omawiane wcześniej użycie programu \texttt{gnuplot} sprowadzało się do wygenerowania podobnego skryptu, stąd osiągany efekt jest niemal identyczny w przypadku rysunków~\ref{fig:gnuplot} oraz~\ref{fig:pgfplots}.
+Ostatnim proponowanym rozwiązaniem jest ręczne generowanie wykresów bezpośrednio w treści dokumentu, stosując bibliotekę \texttt{pgfplots} oraz środowisko \texttt{tikzpicture}. Takie rozwiązanie zapewnia jakość porównywalną do stosowania programu \texttt{gnuplot} i terminala \texttt{tikz}, przy czym wymaga wprowadzenia treści wykresu ręcznie. Przykład wykresu, który generowany jest na podstawie listingu~\ref{lst:pgfplots} przedstawia rysunek~\ref{fig:pgfplots}, przy czym osiągnięty efekt jest podobny do rysunku~\ref{fig:gnuplot}.
 
 \begin{figure}[htb!]
 \centering
@@ -56,7 +56,7 @@ Ostatnim proponowanym rozwiązaniem może być również ręczne generowanie wyk
 		title = {Wykres funkcji $f(x) = e^{-0.1x} \sin(x)$},
 		xlabel = {Wartości parametru $x$},  % opis osi X
 		ylabel = {Wartość funkcji $f(x)$},  % opis osi Y
-		width = 15cm, height = 6cm,         % wymiary wykresu
+		width = 15.5cm, height = 6cm,         % wymiary wykresu
 		xmin = 0, xmax = 20,                % ograniczenia osi X
 		grid = both,                        % siatka pomocnicza
 	]

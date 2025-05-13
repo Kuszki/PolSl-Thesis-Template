@@ -1,5 +1,5 @@
 # Używaj terminala 'tikz' i wyjścia do wskazanego pliku 
-set terminal lua tikz size 16, 6         # rozmiar 16x6
+set terminal lua tikz size 15.5, 6         # rozmiar 16x6
 set output '../obrazki/gnuplot_demo.tex' # plik wyjściowy
 
 # Styl wykresu (offset dodaje margines do opisu osi)

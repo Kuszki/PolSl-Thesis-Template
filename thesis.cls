@@ -43,6 +43,7 @@
 \RequirePackage{wrapfig}
 \RequirePackage{xpatch}
 \RequirePackage{minted}
+\RequirePackage{grfext}
 \RequirePackage{calc}
 \RequirePackage{xurl}
 
@@ -82,6 +83,8 @@
 \renewcommand\topfraction{0.85}
 \renewcommand\bottomfraction{0.35}
 \renewcommand\textfraction{0.25}
+
+\AppendGraphicsExtensions{.tex,.TEX}
 
 \DefineBibliographyStrings{polish}{
 	urlseen = {dostęp},

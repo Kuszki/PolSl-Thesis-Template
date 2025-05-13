@@ -32,4 +32,4 @@ grid on;                                        # Załącz siatkę
 box on;                                         # Załącz obwódkę
 set_format(gca, 'XY', true);                    # Ustaw format osi
 
-print("../obrazki/plot_demo.svg"); # Zapisz wykres do pliku SVG
+print("../obrazki/plot_demo.svg");              # Zapisz wykres do pliku
