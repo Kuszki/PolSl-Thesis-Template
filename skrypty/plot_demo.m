@@ -28,8 +28,8 @@ xlabel("Temperatura otoczenia, °C");            # Ustaw opis osi X
 legend('location', 'southeast');                # Ustaw pozycję legendy
 xlim([0 1]);                                    # Ustaw zakres osi X
 ylim([3 5]);                                    # Ustaw zakres osi Y
-set_comma(gca, 'XY');                           # Ustaw separator
 grid on;                                        # Załącz siatkę
 box on;                                         # Załącz obwódkę
+set_format(gca, 'XY', true);                    # Ustaw format osi
 
 print("../obrazki/plot_demo.svg"); # Zapisz wykres do pliku SVG
