@@ -21,6 +21,7 @@
 \RequirePackage{indentfirst}
 \RequirePackage{longtable}
 \RequirePackage{emptypage}
+\RequirePackage{floatrow}
 \RequirePackage{gincltex}
 \RequirePackage{tabularx}
 \RequirePackage{interval}
@@ -44,7 +45,6 @@
 \RequirePackage{xpatch}
 \RequirePackage{minted}
 \RequirePackage{grfext}
-\RequirePackage{calc}
 \RequirePackage{xurl}
 
 \DeclareSIUnit[quantity-product=-]\bitOwych{bitowych}
@@ -63,8 +63,23 @@
 
 \babelprovide[transforms = oneletter.nobreak]{polish}
 \babelprovide[justification = unhyphenated]{polish}
+
 \hypersetup{hidelinks, breaklinks = true}
-\pgfplotsset{compat = newest}
+
+\floatsetup[table]{style = plain, position = top}
+\floatsetup[figure]{style = plain, position = bottom}
+\floatsetup[listing]{style = plain, position = bottom}
+
+\usepgfplotslibrary{groupplots, statistics, units}
+
+\pgfplotsset{
+	every axis/.append style = {
+		/pgfplots/typeset ticklabel/.code = {
+			\pgfmathparse{\tick}\num[zero-decimal-to-integer]{\pgfmathresult}
+		}
+	},
+	compat = newest
+}
 
 \titleformat{name = \chapter, numberless}[block]{\normalfont\bfseries\huge}{}{0pt}{}
 \titleformat{name = \chapter}[block]{\normalfont\bfseries\huge}{}{0pt}{\thechapter.~}

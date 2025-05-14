@@ -7,7 +7,6 @@ Styl formatowania został określony w pliku \texttt{thesis.cls}, stąd nie ma p
 Standardowo rysunki wklejane są do dokumentu pomiędzy akapitami. Przykład takiego rozwiązania przedstawia rysunek~\ref{fig:rys_1}. Rysunki można wstawiać również w ten sposób, że są one otoczone tekstem, stosując bibliotekę \texttt{wrapfigure}. Nie zaleca się jednak takiego rozwiązania, chyba że rysunek jest bardzo mały, a jego opis zwięzły. Numerowanie rysunków jest automatyczne, a odwoływanie się do nich możliwe jest stosując \verb|\ref{nazwa_rysunku}|, przy czym nazwa ta wskazywana jest podczas wstawiania rysunku.
 
 \begin{figure}[htb!]
-\centering
 \includegraphics{schemat_adc}
 \makecaption{fig:rys_1}{Przykładowy rysunek (źródło: \url{https://github.com/Kuszki/Phd})}
 \end{figure}
@@ -19,7 +18,6 @@ Rysunki należy sporządzać w formacie wektorowym (np. stosując program \textt
 Sporządzanie tabel w \LaTeX{} nie jest przyjemne i wymaga odrobinę wprawy. Rozwiązanie to odwdzięcza się jednak jednolitym wyglądem oraz sporą możliwością automatyzacji formatowania danych. W przypadku tabel z wynikami pomiarów bardzo dobrym pomysłem jest stosowanie biblioteki \texttt{siunitx}. Biblioteka ta zapewnia czytelne wyrównanie wartości liczbowych, a także uniezależnia dane od formatu ich wyświetlania (istotne np. gdy skopiowane wyniki posiadają kropkę jako separator dziesiętny, a lokalny format wymaga przecinka). Tabele~\ref{tab:tab_1} oraz~\ref{tab:tab_2} stanowią przykłady, gdzie zamieszczono wyniki eksperymentów.
 
 \begin{table}[htb!]
-\centering
 \makecaption{tab:tab_1}{Przykład tabeli, gdzie kolejne symbole oznaczają rozkład: $(n)$~normalny, $(u)$~jednostajny, $(t)$~trójkątny, $(d)$~dwumodalny (źródło: \url{https://github.com/Kuszki/Phd})}
 \begin{tabular}[c]{| c *{4}{|S[table-format = 1.4]} |} \hline
 $s_{a,b}$ & \textbf{$n$} & \textbf{$u$} & \textbf{$t$} & \textbf{$d$} \\ \hline
@@ -31,7 +29,6 @@ $d$       & 0.2988       & 0.5337       & 0.3504       & 0.7136       \\ \hline
 \end{table}
 
 \begin{table}[htb!]
-\centering
 \makecaption{tab:tab_2}{Inna przykładowa tabela z wynikami (źródło: \url{https://github.com/Kuszki/Phd})}
 \begin{tabular}[c]{| c *{5}{|S[table-format = 2.2]} *{4}{|S[table-format = +1.2]} |} \hline
 \multirow{2}{*}{\textbf{Wielkość}} & \multicolumn{5}{c|}{\textbf{Niepewność, mV}} & \multicolumn{4}{c|}{\textbf{Błąd, \%}} \\ \cline{2-10}

@@ -3,7 +3,6 @@
 Wykresy powinny być wykonane starannie, z zachowaniem odpowiedniej czytelności. Należy zatem generować je w wyspecjalizowanym do tego celu programie i zapisywać do pliku w formacie grafiki wektorowej. Proponuje się w tym celu program \texttt{GNU Octave} lub \texttt{gnuplot}. Odpowiednio wykonany rysunek powinien cechować się identycznym krojem i wielkością czcionki, co osiągnięto w przypadku rysunku~\ref{fig:octave}, stosując przykładowy skrypt~\ref{lst:octave}.
 
 \begin{figure}[htb!]
-\centering
 \includegraphics{plot_demo}
 \makecaption{fig:octave}{Przykładowy rysunek wygenerowany w programie \texttt{GNU Octave}}
 \end{figure}
@@ -20,7 +19,6 @@ Po wygenerowaniu danych wykres jest sporządzany oraz formatowane są jego eleme
 Wykresy można generować również w programie \texttt{gnuplot}, gdzie przykładowy skrypt przedstawiono w listingu~\ref{lst:gnuplot}. Stosować w tym celu można terminal \texttt{tikz}, który umożliwia wygenerowanie skryptu \LaTeX{} gotowego do osadzenia w dokumencie. Zauważyć można, że tytuł wykresu \enquote{$f(x) = e^{-0.1x} \cdot \sin(x)$} z rysunku~\ref{fig:gnuplot} wygląda identycznie, jak w tekście.
 
 \begin{figure}[htb!]
-\centering
 \includegraphics{gnuplot_demo}
 \makecaption{fig:gnuplot}{Przykładowy rysunek wygenerowany w programie \texttt{gnuplot}}
 \end{figure}
@@ -33,7 +31,6 @@ Wykresy można generować również w programie \texttt{gnuplot}, gdzie przykła
 Ostatnim proponowanym rozwiązaniem jest ręczne generowanie wykresów bezpośrednio w treści dokumentu, stosując bibliotekę \texttt{pgfplots} oraz środowisko \texttt{tikzpicture}. Takie rozwiązanie zapewnia jakość porównywalną do stosowania programu \texttt{gnuplot} i terminala \texttt{tikz}, przy czym wymaga wprowadzenia treści wykresu ręcznie. Przykład wykresu, który generowany jest na podstawie listingu~\ref{lst:pgfplots} przedstawia rysunek~\ref{fig:pgfplots}, przy czym osiągnięty efekt jest podobny do rysunku~\ref{fig:gnuplot}.
 
 \begin{figure}[htb!]
-\centering
 \begin{tikzpicture}
 	\begin{axis}[
 		title = {Wykres funkcji $f(x) = e^{-0.1x} \sin(x)$},
