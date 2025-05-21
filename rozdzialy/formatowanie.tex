@@ -11,7 +11,7 @@ Standardowo rysunki wklejane są do dokumentu pomiędzy akapitami. Przykład tak
 \makecaption{fig:rys_1}{Przykładowy rysunek (źródło: \url{https://github.com/Kuszki/Phd})}
 \end{figure}
 
-Rysunki należy sporządzać w formacie wektorowym (np. stosując program \texttt{LibreOffice}). Wykresy generowane przez programy \texttt{GNU Octave} oraz \texttt{MATLAB} mogą być eksportowane do formatu \texttt{SVG}. Natywne w \LaTeX{} obsługiwane są obrazy w formacie \texttt{PDF}. Wszystkie pliki z rozszerzeniami \texttt{.odg} oraz \texttt{.svg}, znajdujące się w folderze \texttt{obrazki}, będą jednak automatycznie skonwertowane do tego formatu podczas uruchamiania skryptu \texttt{build.sh}. Należy unikać stosowania obrazków w formacie rastrowym (np. \texttt{.jpeg} lub \texttt{.png}), chyba że stanowią one zdjęcie lub nie ma możliwości sporządzenia rysunku w formacie wektorowym.
+Rysunki należy sporządzać w formacie wektorowym (np. stosując program \texttt{LibreOffice}). Wykresy generowane przez programy \texttt{GNU Octave} oraz \texttt{MATLAB} mogą być eksportowane do formatu \texttt{SVG}. Natywne w \LaTeX{} obsługiwane są obrazy w formacie \texttt{PDF}. Wszystkie pliki z rozszerzeniami \texttt{.odg} oraz \texttt{.svg}, znajdujące się w folderze \texttt{obrazki}, będą jednak automatycznie skonwertowane do tego formatu podczas uruchamiania skryptu \texttt{build.sh}. Należy unikać stosowania obrazków w formacie rastrowym (np. \texttt{JPEG} lub \texttt{PNG}), chyba że stanowią one zdjęcie lub nie ma możliwości sporządzenia rysunku w formacie wektorowym.
 
 \section{Wklejanie tabel}
 
@@ -136,17 +136,17 @@ Podczas cytowania literatury oraz odnoszenia się do rysunków, tabel i równań
 
 Stosowany w \LaTeX{} format pisania równań jest formatem stosowanym w większości profesjonalnych rozwiązań. Warto zauważyć, że między innymi \texttt{ChatGPT} odpowiadając na pytanie pisze odpowiedź stosując omawiany format. Rozwiązanie to wykorzystuje również \texttt{Wikipedia}. Oznacza to, że niezwykle łatwe jest kopiowanie i edycja równań umieszczonych w internecie lub generowanych przez sztuczną inteligencję.
 
-Zwyczajowo w tego typu pracach wszystkie równania, rysunki, tabele, listingi itp. numeruje się względem rozdziału (tj. dodaje się numeracje \texttt{rozdział.obiekt}). Z uwagi na fakt, że prace magisterskie i projekty inżynierskie cechują się objętością nieprzekraczającą około \qty{50}{stron}, w proponowanym szablonie nie stosuje się takiego numerowania. Można je jednak aktywować poprzez zamianę w pliku \texttt{thesis.cls} wystąpień \verb|\counterwithout{...}{chapter}| na \verb|\counterwithin{...}{chapter}|.
-
-Aby uzyskać minimalną objętość pracy szablon nie zakłada dodawania pustych stron w celu osiągnięcia rozpoczęcia kolejnych rozdziałów na prawej stronie. Aby osiągnąć ten efekt należy w pliku \texttt{thesis.cls} zamienić \verb|\clearpage| na \verb|\cleardoublepage| oraz dodać parametr \texttt{openright} do opcji klasy dokumentu w pliku \texttt{thesis.tex}.
+Zwyczajowo w tego typu pracach wszystkie równania, rysunki, tabele, listingi itp. numeruje się względem rozdziału (tj. dodaje się numeracje \texttt{rozdział.obiekt}). Z uwagi na fakt, że prace magisterskie i projekty inżynierskie cechują się objętością nieprzekraczającą około \qty{50}{stron}, w proponowanym szablonie nie stosuje się takiego numerowania. Można je jednak aktywować poprzez zamianę w pliku \texttt{thesis.cls} wystąpień \verb|\counterwithout{...}{chapter}| na \verb|\counterwithin{...}{chapter}|. Aby uzyskać minimalną objętość pracy szablon nie zakłada dodawania pustych stron w celu osiągnięcia rozpoczęcia kolejnych rozdziałów na prawej stronie. Aby osiągnąć ten efekt należy w pliku \texttt{thesis.cls} zamienić \verb|\clearpage| na \verb|\cleardoublepage| oraz dodać parametr \texttt{openright} do opcji klasy dokumentu w pliku \texttt{thesis.tex}.
 
 Zmiana formatowania może być osiągnięta poprzez edycję opcji stosowanych bibliotek. Najważniejsze biblioteki stosowane w niniejszym szablonie to:
 \begin{itemize}
-\item \texttt{\href{https://ctan.org/pkg/biblatex}{biblatex}} -- do obsługi bibliografii,
-\item \texttt{\href{https://ctan.org/pkg/siunitx}{siunitx}} -- do formatowania liczb i wielkości fizycznych,
-\item \texttt{\href{https://ctan.org/pkg/interval}{interval}} -- do obsługi przedziałów liczbowych,
-\item \texttt{\href{https://ctan.org/pkg/babel-polish}{babel}} -- do obsługi języka polskiego w dokumencie,
-\item \texttt{\href{https://ctan.org/pkg/pdfx}{pdfx}} -- aby zapewnić plik wyjściowy w formacie \texttt{PDF/A-3u},
-\item \texttt{\href{https://ctan.org/pkg/hyperref}{hyperref}} -- do wygenerowania łącz w dokumencie,
-\item \texttt{\href{https://ctan.org/pkg/minted}{minted}} -- do formatowania wstawek kodu.
+\item \texttt{\href{https://ctan.org/pkg/biblatex}{biblatex}} do obsługi bibliografii,
+\item \texttt{\href{https://ctan.org/pkg/siunitx}{siunitx}} do formatowania liczb i wielkości fizycznych,
+\item \texttt{\href{https://ctan.org/pkg/interval}{interval}} do obsługi przedziałów liczbowych,
+\item \texttt{\href{https://ctan.org/pkg/babel-polish}{babel}} do obsługi języka polskiego w dokumencie,
+\item \texttt{\href{https://ctan.org/pkg/hyperref}{hyperref}} do wygenerowania łącz w dokumencie,
+\item \texttt{\href{https://ctan.org/pkg/hyperref}{fancyhdr}} do formatowania nagłówka i stopki,
+\item \texttt{\href{https://ctan.org/pkg/minted}{minted}} do formatowania wstawek kodu,
+\item \texttt{\href{https://ctan.org/pkg/caption}{caption}} do formatowania treści podpisów wstawianych obiektów,
+\item \texttt{\href{https://ctan.org/pkg/titlesec}{titlesec}} do formatowania tytułów rozdziałów oraz podrozdziałów.
 \end{itemize}

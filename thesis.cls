@@ -18,9 +18,12 @@
 
 \RequirePackage{gnuplot-lua-tikz}
 \RequirePackage{unicode-math}
+
+\RequirePackage{pgfplotstable}
 \RequirePackage{indentfirst}
 \RequirePackage{longtable}
 \RequirePackage{emptypage}
+\RequirePackage{csvsimple}
 \RequirePackage{floatrow}
 \RequirePackage{gincltex}
 \RequirePackage{tabularx}
@@ -35,6 +38,7 @@
 \RequirePackage{multicol}
 \RequirePackage{enumitem}
 \RequirePackage{textcomp}
+\RequirePackage{booktabs}
 \RequirePackage{pgfplots}
 \RequirePackage{lmodern}
 \RequirePackage{tocloft}
@@ -46,6 +50,7 @@
 \RequirePackage{minted}
 \RequirePackage{grfext}
 \RequirePackage{xurl}
+\RequirePackage{xfp}
 
 \DeclareSIUnit[quantity-product=-]\bitOwych{bitowych}
 \DeclareSIUnit[quantity-product=-]\bitOwego{bitowego}
@@ -73,12 +78,25 @@
 \usepgfplotslibrary{groupplots, statistics, units}
 
 \pgfplotsset{
-	every axis/.append style = {
-		/pgfplots/typeset ticklabel/.code = {
-			\pgfmathparse{\tick}\num[zero-decimal-to-integer]{\pgfmathresult}
-		}
+	/pgf/number format/use comma,
+	/pgf/number format/read comma as period,
+	/pgf/number format/set thousands separator = {},
+	compat = newest,
+}
+
+\pgfplotstableset{
+	every head row/.style = {
+		before row = \toprule,
+		after row = \midrule
 	},
-	compat = newest
+	every last row/.style = {
+		after row = \bottomrule
+	}
+}
+
+\csvset{
+	csvsorter command = java -jar csvsorter.jar,
+	csvsorter log = budowa/csvsorter.log,
 }
 
 \titleformat{name = \chapter, numberless}[block]{\normalfont\bfseries\huge}{}{0pt}{}
@@ -276,3 +294,5 @@
 \delimitershortfall=-1pt
 \delimiterfactor=900
 % --------------------
+
+\flushbottom
