@@ -52,17 +52,6 @@
 \RequirePackage{xurl}
 \RequirePackage{xfp}
 
-\DeclareSIUnit[quantity-product=-]\bitOwych{bitowych}
-\DeclareSIUnit[quantity-product=-]\bitOwego{bitowego}
-\DeclareSIUnit[quantity-product=-]\bitOwaa{bitową}
-\DeclareSIUnit[quantity-product=-]\bitOwa{bitowa}
-\DeclareSIUnit[quantity-product=-]\bitOwe{bitowe}
-\DeclareSIUnit[quantity-product=-]\bitOwy{bitowy}
-\DeclareSIUnit[quantity-product=-]\bitOw{bitów}
-\DeclareSIUnit[quantity-product=-]\bitY{bity}
-\DeclareSIUnit[quantity-product=-]\bit{bit}
-
-\DeclareSIUnit[quantity-product=-]\numTej{tej}
 \DeclareSIUnit[quantity-product=]\percent{\char"0025}
 \DeclareSIUnit\degreeCelsius{\char"2103}
 
@@ -124,8 +113,9 @@
 	in      = {}
 }
 
-\newcommand{\hugelinespacing}{\renewcommand{\baselinestretch}{1.60} \normalsize}
+\newcommand{\clearpagesif}{\ifthenelse{\boolean{@openright}}{\cleardoublepage}{\clearpage}}
 
+\newcommand{\hugelinespacing}{\renewcommand{\baselinestretch}{1.60} \normalsize}
 \newcommand{\normallinespacing}{\renewcommand{\baselinestretch}{1.30} \normalsize}
 \newcommand{\mediumlinespacing}{\renewcommand{\baselinestretch}{1.00} \normalsize}
 \newcommand{\narrowlinespacing}{\renewcommand{\baselinestretch}{0.70} \normalsize}
@@ -206,7 +196,7 @@
 	\egroup
 	\vss
 	\egroup
-	\clearpage
+	\clearpagesif
 	\normallinespacing
 }
 
@@ -220,7 +210,7 @@
 	\noindent\textbf{Thesis title:}~\titleen\par
 	\noindent\textbf{Summary:}~\input{dodatki/abstract}\par
 	\noindent\textbf{Key words:}~\keywordsen\par
-	\clearpage
+	\clearpagesif
 	\normallinespacing
 	\tocloftpagestyle{empty}
 	\tableofcontents
@@ -228,7 +218,7 @@
 
 \def\appendix
 {
-	\clearpage
+	\clearpagesif
 	\mediumlinespacing
 	\pagestyle{plain}
 	\printbibliography[heading = bibintoc, title = Literatura]
@@ -236,7 +226,7 @@
 
 \def\body
 {
-	\clearpage
+	\clearpagesif
 	\normallinespacing
 	\pagenumbering{arabic}
 	\pagestyle{fancy}

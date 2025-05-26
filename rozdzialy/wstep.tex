@@ -1,6 +1,6 @@
 \chapter{Wstęp}
 
-Niniejszy szablon zawiera formaty nagłówków, stronę tytułową jak i propozycje spisu treści, podpisów pod rysunkami, wzory tabel, itp. przeznaczone jako wzór przy formatowaniu pracy dyplomowej.
+Niniejszy szablon zawiera propozycję formatowania pracy dyplomowej, zgodne z wytycznymi z \href{https://lex.polsl.pl/423-lista/d/20505/5/}{Zarządzenia nr 54/2022}. Szablon dostępny jest na licencji \texttt{GNU LGPL v2.1}. Stosowanie, modyfikowanie i rozpowszechnianie niniejszego szablonu jest dozwolone w dowolnym celu, przy czym sam szablon traktowany jest jak zewnętrzna biblioteka. Plik loga \verb|polsl_logo.png|, który znajduje się w folderze \texttt{obrazki}, jest własnością Politechniki Śląskiej i jego stosowanie regulowane jest przepisami zawartymi w \href{https://www.polsl.pl/siwps/logo-2/}{Księdze Znaku}. Uwagi proszę zgłaszać na adres autora: \href{mailto:lukasz.drozdz@polsl.pl}{lukasz.drozdz@polsl.pl}.
 
 Szablon złożony jest z następujących katalogów:
 \begin{itemize}
@@ -18,6 +18,4 @@ W katalogu głównym natomiast znaleźć można pliki:
 \item \texttt{thesis.xmpdata} -- metryka dokumentu (należy uzupełnić).
 \end{itemize}
 
-W pliku \texttt{thesis.tex} należy uzupełnić dane dotyczące pracy, zgodnie z komentarzami w pliku, a następnie dodać kolejne rozdziały pracy. Dodatkowo dane \texttt{XMP} dla dokumentu \texttt{PDF} należy uzupełnić w pliku \texttt{thesis.xmpdata}. Pliku \texttt{thesis.cls} nie zaleca się edytować -- można to jednak robić, jeśli konieczna jest edycja stylu dokumentu.
-
-Dokument \texttt{PDF} generowany jest w formacie \texttt{PDF/A-3u}. Marginesy dokumentu ustawione są tak, aby wewnętrzny margines był większy od zewnętrznego, co umożliwia zbindowanie pracy przy jednoczesnym zachowaniu jej czytelności. W celu uzyskania wersji z równymi marginesami (np. w celu zapisu jej na płytę) należy zamienić \verb|inner = 3.0cm, outer = 2.0cm| na \verb|inner = 2.5cm, outer = 2.5cm| w pliku \texttt{thesis.cls}. Ogólny układ pracy nie ulegnie zmianie.
+W pliku \texttt{thesis.tex} należy uzupełnić dane dotyczące pracy, zgodnie z komentarzami w pliku, a następnie dodać kolejne rozdziały pracy. Dodatkowo dane \texttt{XMP} dla dokumentu \texttt{PDF} należy uzupełnić w pliku \texttt{thesis.xmpdata}. Pliku \texttt{thesis.cls} nie zaleca się edytować -- można to jednak robić, jeśli konieczna jest edycja stylu dokumentu. Dokument \texttt{PDF} generowany jest w formacie \texttt{PDF/A-3u}. Marginesy dokumentu ustawione są tak, aby wewnętrzny margines był większy od zewnętrznego, co umożliwia zbindowanie pracy przy jednoczesnym zachowaniu jej czytelności. Marginesy edytować można w pliku \texttt{thesis.cls}.
