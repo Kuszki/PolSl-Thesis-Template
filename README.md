@@ -58,9 +58,9 @@ Przygotowując dokument w parametrach `\documentclass` stosować można wszystki
 * `twoside` – dokument dwustronny, dobry do druku i bindowania – zewnętrzny margines jest mniejszy oraz wewnętrzny jest większy, metryka oraz spis treści pojawią się na prawych stronach,
 * `openright` – rozpoczynaj treść od prawej strony – wszystkie rozdziały będą się rozpoczynały na prawych stronach.
 
-Wskazane opcje pozwalają utworzyć wersję pliku do druku oraz wersję cyfrową na płytę. Wersja do druku powinna stosować opcję `twoside`, którą należy wyłączyć w wersji na płytę. W ten sposób wersja do druku będzie przygotowana do zgrzewania (zwiększony wewnętrzny margines) oraz będzie posiadać dodatkowe puste strony. Wersja na płytę CD pozbawiona będzie dodatkowych pustych stron oraz będzie miała identyczne marginesy. Należy zauważyć, że numeracja stron nie ulegnie zmianie w wersji drukowanej i cyfrowej.
+Wskazane opcje pozwalają utworzyć wersję pliku do druku oraz wersję cyfrową na płytę. Wersja do druku powinna stosować opcję `twoside`, którą natomiast należy wyłączyć w wersji na płytę. W ten sposób wersja do druku będzie przygotowana do zgrzewania (zwiększony wewnętrzny margines) oraz będzie posiadać dodatkowe puste strony. Wersja na płytę CD pozbawiona będzie dodatkowych pustych stron oraz będzie miała identyczne marginesy. Należy zauważyć, że numeracja stron nie ulegnie zmianie w wersji drukowanej i cyfrowej.
 
-Opcja `openright` 
+Opcja `openright` działa tylko równolegle z opcją `twoside`. Jej stosowanie nie jest jednak zalecane z dwóch powodów. Pierwszym z nich jest objętość pracy, którą zaleca się zachować jak najmniejszą. Drugi powód odnosi się do zmiany numeracji stron względem różnych wersji `twoside`.
 
 ## Licencja
 
