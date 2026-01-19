@@ -6,9 +6,12 @@
 \RequirePackage[a-3u, allxmp, pdf17]{pdfx}
 \pdfminorversion=7
 
+\ifthenelse{\boolean{@twoside}}
+	{\RequirePackage[inner = 3.0cm, outer = 2.0cm, top = 2.5cm, bottom = 2.5cm]{geometry}}
+	{\RequirePackage[inner = 2.5cm, outer = 2.5cm, top = 2.5cm, bottom = 2.5cm]{geometry}}
+
 \RequirePackage[backend = biber, style = numeric-comp, sorting = nyt, sortcites = true, maxnames = 9]{biblatex}
 \RequirePackage[font = small, labelfont = bf, textfont = it, singlelinecheck = false]{caption}
-\RequirePackage[inner = 3.0cm, outer = 2.0cm, top = 2.5cm, bottom = 2.5cm]{geometry}
 \RequirePackage[leftmargin = 12pt, rightmargin = 12pt, font = itshape]{quoting}
 \RequirePackage[locale = PL]{siunitx}
 
@@ -113,7 +116,7 @@
 	in      = {}
 }
 
-\newcommand{\clearpagesif}{\ifthenelse{\boolean{@openright}}{\cleardoublepage}{\clearpage}}
+\newcommand{\clearpagesif}{\ifthenelse{\boolean{@twoside}}{\cleardoublepage}{\clearpage}}
 
 \newcommand{\hugelinespacing}{\renewcommand{\baselinestretch}{1.60} \normalsize}
 \newcommand{\normallinespacing}{\renewcommand{\baselinestretch}{1.30} \normalsize}

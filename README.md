@@ -52,6 +52,16 @@ latexmk --shell-escape -output-directory=budowa -pdflua -f thesis.tex
 
 Niniejszy szablon może być również stosowany bezpośrednio w serwisie [`Overleaf`](https://www.overleaf.com/read/sgzmptyskmvn#9bd014). Należy jednak koniecznie zmienić stosowany kompilator z `pdfTeX` na `LuaTeX`. Zaleca się jednak, z uwagi na ochronę własności intelektualnej i zapobieganie analizowaniu dokumentu przez obce podmioty, instalację środowiska `LaTeX` na własnym komputerze.
 
+## Podstawowe opcje szablonu
+
+Przygotowując dokument w parametrach `\documentclass` stosować można wszystkie opcje, które są dostępne dla klasy `report`. Najważniejsze z punktu widzenia użytkownika to:
+* `twoside` – dokument dwustronny, dobry do druku i bindowania – zewnętrzny margines jest mniejszy oraz wewnętrzny jest większy, metryka oraz spis treści pojawią się na prawych stronach,
+* `openright` – rozpoczynaj treść od prawej strony – wszystkie rozdziały będą się rozpoczynały na prawych stronach.
+
+Wskazane opcje pozwalają utworzyć wersję pliku do druku oraz wersję cyfrową na płytę. Wersja do druku powinna stosować opcję `twoside`, którą należy wyłączyć w wersji na płytę. W ten sposób wersja do druku będzie przygotowana do zgrzewania (zwiększony wewnętrzny margines) oraz będzie posiadać dodatkowe puste strony. Wersja na płytę CD pozbawiona będzie dodatkowych pustych stron oraz będzie miała identyczne marginesy. Należy zauważyć, że numeracja stron nie ulegnie zmianie w wersji drukowanej i cyfrowej.
+
+Opcja `openright` 
+
 ## Licencja
 
 Niniejszy szablon dostępny jest na licencji `GNU LGPL v2.1`. Stosowanie, modyfikowanie i rozpowszechnianie niniejszego szablonu jest dozwolone w dowolnym celu, przy czym sam szablon traktowany jest jak zewnętrzna biblioteka.
